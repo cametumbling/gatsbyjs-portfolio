@@ -12,11 +12,13 @@ export default function About({ data }) {
         <Header headerText={data.site.siteMetadata.description}/>
         {/* <Header headerText="About me" /> */}
         <p style={{ color: `#ccc`}}>      
-        Hi! I'm Jill, a JavaScript-based web developer from California, working with technologies such as React, Node.js, Express, and SQL. In a previous life, I was a GIS Data Analyst, so I am great with databases of all kinds. In addition to building web apps, I love visualizing data and making maps.
-
-I hold two master's degrees, one in Anthropology + Archaeology, and the most recent in Cuneiform Studies from the University of Oxford, where I have developed several sites and am involved with Oxford Women in Computer Science.
-
-My last job was at the Metropolitan Museum of Art in New York, where I got my start in front-end web development and Agile project management, joining the dev team for UX work, testing, and making responsive sites.
+        Hi! I'm Jill, a JavaScript-based web developer from California, working with technologies such as React, Node.js, Express, and PostgreSQL. (This site was built using Gatsby!) In a previous life, I was a GIS Data Analyst, so I am great with databases and I love maps--analog or digital! 
+        <br/>
+I hold two masters degrees, one in Anthropology and Archaeology from CUNY Hunter, and the most recent in Cuneiform Studies from the University of Oxford. At Oxford, I organized several conferences, acted as the webmaster for my boat club (go Wolfson!), volunteered for a trauma helpline, and was involved with Oxford Women of Computer Science. 
+        <br/>
+My last permanent role was at the Metropolitan Museum of Art in New York, where I got my start in front-end web development and Agile project management, joining the dev team for UX work, testing, and making responsive sites.
+        <br />
+        Most recently I have been working on an app to bring social justice to historically non-diverse spaces.
       </p>
       <img src={ProfileImage} alt="Photo of me sitting on a rock in the middle of a stream"/>
       </div>
