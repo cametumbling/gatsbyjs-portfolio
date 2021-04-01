@@ -195,7 +195,7 @@ export default function IndexPage({ data }) {
             </span>
           </h1>
           <p>
-            Well! This was meant to be a Gatsby Cloud deployment of my real portfolio site, but 12 hours later my site is still over on surge, and instead I have hear a cute photo of pandas and the beginnings of a second portfolio site. The Gatsby docs are great, but as this long day and late night prove, better tutorials for Gatsby Cloud are needed! But I love Gatsby, and look forward to working this migration out with a good night's sleep.  For now, read a bit more about me, and feel free to shoot me an email. 
+            Well! This was meant to be a Gatsby Cloud deployment of my real portfolio site, but 12 hours later my site is still over on surge, and instead I have here a cute photo of pandas and the beginnings of a second portfolio site. The Gatsby docs are great, but as this long day and late night prove, better tutorials for Gatsby Cloud are needed! But I love Gatsby, and look forward to working this migration out with a good night's sleep.  For now, read a bit more about me, and feel free to [bamboo]shoot me an email. 
           </p>
           <img
               src="https://2.bp.blogspot.com/-BMP2l6Hwvp4/TiAxeGx4CTI/AAAAAAAAD_M/XlC_mY3SoEw/s1600/panda-group-eating-bamboo.jpg"
@@ -205,10 +205,10 @@ export default function IndexPage({ data }) {
             <h1
               css={css`
                 display: inline-block;
-                color: #eee;
+                color: magenta;
               `}
             >
-              Recent Articles
+              Recent Posts
             </h1>
             {/* <h4
                       css={css`
