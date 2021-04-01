@@ -7,9 +7,9 @@ import Layout from "../components/layout"
 export default function Contact() {
   return (
     <Layout>
-      <div style={{ color: `teal` }}>
+      <div>
         <Header headerText="Contact" />
-        <p>Send us a message!</p>
+        <p style={{ color: `#ccc`}}>Send me a message! <br/> <span style={{color:`#eee`}}>jill dot marcum at gmail dot com </span><br/>A classic.</p>
       </div>
     </Layout>
   )

@@ -1,10 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Header from "../components/header";
+
 export default function MyFiles({ data }) {
   return (
     <Layout>
-        <h1>My Site's Files</h1>
+        <Header headerText="Blog Posts" />
         <table>
           <thead>
             <tr>

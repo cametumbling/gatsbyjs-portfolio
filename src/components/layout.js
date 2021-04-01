@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li style={{ color: `magenta`, textShadow: `none`, display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
@@ -27,13 +27,30 @@ export default function Layout({ children }) {
         css={css`
         margin: 0 auto;
         max-width: 700px;
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1.5)};
+
     `}
     >
+        <ul style={{ marginTop: `90px`, textShadow: `none`, listStyle: `none`, float: `right` }}>
+          <ListLink to={`/`}>Home</ListLink>
+          <ListLink to={`/about/`}>About</ListLink>
+          <ListLink to={`/blog`}>Blog</ListLink>
+          <ListLink to={`/contact/`}>Contact</ListLink>
+        </ul>
       <header style={{ marginBottom: `1.5rem` }}>
         <Link to={`/`} style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 
+          <h1
+            // style={{ display: `inline` }}
+            css={css`
+              color: #eee;
+              font-weight: bold;
+              font-size: 60px;
+              margin-bottom: ${rhythm(1)};
+              display: inline-block;
+          `}
+          >
+            {data.site.siteMetadata.title}
+          </h1>
+          {/* <h2
             // style={{ display: `inline` }}
             css={css`
               margin-bottom: ${rhythm(2)};
@@ -41,14 +58,9 @@ export default function Layout({ children }) {
               font-style: normal;
           `}
           >
-            {data.site.siteMetadata.title}
-          </h3>
+            {data.site.siteMetadata.description}
+          </h2> */}
         </Link>
-        <ul style={{ listStyle: `none`, float: `right` }}>
-          <ListLink to={`/`}>Home</ListLink>
-          <ListLink to={`/about/`}>About</ListLink>
-          <ListLink to={`/contact/`}>Contact</ListLink>
-        </ul>
       </header>
       {children}
     </div>
